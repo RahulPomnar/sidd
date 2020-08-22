@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Certificates Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background: #232a42;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            background: #060c21;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            height: 400px;
+        }
+
+        .box .imgBx {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .box .imgBx img {
+            max-width: 100%;
+            opacity: 0.3;
+            transition: 0.5s;
+        }
+
+        .box:hover .imgBx img {
+            opacity: 1;
+        }
+
+        .box:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index: -1;
+        }
+
+        .box:after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index: -2;
+            filter: blur(40px);
+        }
+
+        .box:before,
+        .box:after {
+            background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+        }
+
+        .box .content {
+            padding-top: 250px;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            height: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .box:hover .content {
+            opacity: 1;
+        }
+
+        .box .content h2 {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+
+        .box .content h2 span {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            text-align: center;
+            justify-content: center;
+            padding-right: 500px;
+            padding-left: 500px;
+            padding-top: 40px;
+            font-size: 40px;
+            font-weight: 700;
+            color: rgba(1, 9, 34, 0.87);
+            text-shadow: 1px 5px rgba(15, 0, 32, 0.2);
+            font-style: oblique;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Certificates</h1>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Python Specialization Certificate.jpg"><img
+                    src="certificates/Python Specialization Certificate.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Certificates for Specialization in Python <br><span>by UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Programming  For Everybody Python.jpg"><img
+                    src="certificates/Programming  For Everybody Python.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Programming  For Everybody Python<br><span>by UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Python Data Structure.jpg">
+                <img src="certificates/Python Data Structure.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Certificate For Python Data Structure<br><span>by  UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Using Python to Access Web Data.jpg">
+                <img src="certificates/Using Python to Access Web Data.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Using Python to Access Web Data<br><span>by  UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Using Databases with Python.jpg">
+                <img src="certificates/Using Databases with Python.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Using Databases with Python<br><span>by  UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Capstone  Retrieving Processing and Visualizing Data with Python.jpg">
+                <img src="certificates/Capstone  Retrieving Processing and Visualizing Data with Python.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Capstone  Retrieving Processing and Visualizing Data with Python<br><span>by UNIVERSITY OF MICHIGAN</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Programming  Foundation with JavaScript HTML and  CSS.jpg">
+                <img src="certificates/Programming  Foundation with JavaScript HTML and  CSS.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Programming  Foundation with JavaScript HTML and  CSS<br><span>by DUKE UNIVERSITY</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Successful Presentation .jpg">
+                <img src="certificates/Successful Presentation .jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Non Techincal course Successful Presentation<br><span>by UNIVERSITY OF COLORADO </span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/Teamwork Skills.jpg">
+                <img src="certificates/Teamwork Skills.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Non Techincal course Teamwork Skills Communicating Effectively In Group<br><span>by UNIVERSITY OF COLORADO</span> </h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <a href="certificates/NEO CERTIFICATE.jpg">
+                <img src="certificates/NEO CERTIFICATE.jpg"></a>
+        </div>
+        <div class="content">
+            <h2>Participation Certificate<br><span>by NEO 3.0</span> </h2>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+*/
